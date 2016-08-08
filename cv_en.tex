@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+% NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\userinformation{
+\begin{flushright}
+% Comment out this figure block if you don't want a photo
+\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+\small
+Florian Stinglmayr \\
+\url{fstinglmayr@gmail.com} \\
++43 660 3949437
+\SmallSep \\
+\textbf{Address} \\
+\SmallSep
+Kienzlstrasse 1 \\
+A-4600 Wels, Austria
+\vfill % Whitespace under this block to push it up under the photo
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+% HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Florian Stinglmayr}
+
+\cvsubheading{Software Engineer}
+
+%----------------------------------------------------------------------------------------
+% ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{About Me}{
+  I was born in Wels on the 29th of August 1988, and grew up in
+  Krenglbach. After for years of elementary school in Krenglbach, and another
+  four years in the BRG Brucknerstraße Wels, I went to the HTL Grieskirchen
+  for IT and Economics, from which I graduated in 2007. There I gained a
+  passion for software engineering and design, which I pursue both on a
+  professional level and as a private hobby. I have been part of a few Open
+  Source Projects in the past, most notably the PC-BSD project, but at the
+  moment in involved with the OpenBSD project.
+}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{2002 - 2007, HTL Grieskirchen}{Higher Education in Computer Science and Economics}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+\CVItem{December 2007 - 2013, \textit{Software Engineer}, Maroxx Software GmbH
+  and Xatronic Software GmbH}{
+
+  The company was renamed from Maroxx Software GmbH to Xatronic Software GmbH in
+  2012. It provided software for gambling machines to Austrian and Czech
+  customers.
+
+  \begin{itemize}
+  \item Continued development on a large software stack written in C and C++:
+    \begin{itemize}
+    \item Development of new features
+    \item Third level support for customers and bug fixing
+    \item Developing tooling for QA and customers
+    \item Maintaining of build infrastructure (Git, Jenkins)
+    \item Writing and maintaining documentation
+    \end{itemize}
+  \item Development of Debian Linux based system:
+    \begin{itemize}
+    \item Developing API interfaces between the base system and the
+      aforementioned software stack
+    \item Creating Debian packages of our own software, those of customers, and
+      other third-party software
+    \item Automated build and deployment of packages using Jenkins
+    \item Writing specialised deployment software for customers
+    \end{itemize}
+  \end{itemize}
+}
+
+\clearpage
+\userinformation
+\framebreak
+
+
+\CVItem{May 2013 - 2016, \textit{Head of System Department} Xatronic Software GmbH}{
+
+  In 2013 I took over the lead of the \textit{System Department}. My main
+  responsibilities were to lead and manage a small team of four software
+  engineers and two quality assurance engineers.
+
+  \begin{itemize}
+  \item Planning and organising new projects together with customers, peers, and
+    various other stakeholders
+  \item Preparing new software releases:
+    \begin{itemize}
+    \item Specifying new features together with customers and my team members
+    \item Overseeing cross software release parameters, such as software
+      upgrades, migration, API and ABI compatibility
+    \item Help customers create a software and release road map for the
+      upcoming year
+    \end{itemize}
+  \item Managing a small team of four software engineers, and two quality
+    assurance engineers to accurately and reliably reach goals and deadlines
+  \item Helping the QA engineers with building and maintaining test plans,
+    frameworks and test tools
+  \item Overseeing the overall development, including coding standards,
+    guidelines, best practices and performing code reviews
+  \end{itemize}
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+% Certifications
+%----------------------------------------------------------------------------------------
+
+% TODO
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Software Development Skills}
+
+%------------------------------------------------
+
+\CVItem{Programming}{
+  \begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+    \bluebullet C &  \bluebullet Shell & \bluebullet Perl\\
+    \bluebullet C++ &  \bluebullet Lua & \bluebullet Python\\
+  \end{tabular}
+}
+
+\CVItem{Technologies}{
+  \begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+    \bluebullet Git & \bluebullet POSIX C & \bluebullet Debian Linux \\
+    \bluebullet OpenBSD & \bluebullet SQLite & \bluebullet MySQL \\
+    \bluebullet GTK+ 3.0 & \bluebullet Qt 5 & \bluebullet Boost \\
+    \bluebullet Ansible & \bluebullet Jenkins \\
+  \end{tabular}
+}
+
+%------------------------------------------------
+
+\CVItem{Other Skills}{
+  \begin{tabular}{p{1.0\textwidth}}
+    \bluebullet Driving Licence (B) \\
+    \bluebullet German (mother tongue) \\
+    \bluebullet English (excellent both written and spoken) \\
+    \bluebullet Swedish (A2 level)
+  \end{tabular}
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+% NEW PAGE DELIMITER
+% Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+%\userinformation % Print your information in the left column
+%\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+% AWARDS
+%----------------------------------------------------------------------------------------
+
+%\CVSection{Awards}
+
+%------------------------------------------------
+
+%\CVItem{2010, \textit{Postgraduate Scholarship}, Cornell University}{Awarded to the top student in their final year of a Bachelors degree.}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+% INTERESTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Interests}
+
+%------------------------------------------------
+
+\CVItem{Professional}{Software Engineering, data analysis, software profiling
+  and reviews, software design and architecture, build and deployment
+  automation.}
+
+%------------------------------------------------
+
+\CVItem{Personal}{Open Source Software, being a small time maintainer and
+  developer for the OpenBSD project, reading, music, games and everything
+  related to science (especially astronomy).}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
